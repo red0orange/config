@@ -1,0 +1,58 @@
+set easymotion
+set surround
+set keep-english-in-normal-and-restore-in-insert
+set multiple-cursors
+
+let mapleader=' '
+
+inoremap <Up> <Nop>
+nnoremap <Up> <Nop>
+inoremap <Down> <Nop>
+nnoremap <Down> <Nop>
+inoremap <Left> <Nop>
+nnoremap <Left> <Nop>
+inoremap <Right> <Nop>
+nnoremap <Right> <Nop>
+inoremap jj <Esc>
+inoremap <Esc> <Nop>
+
+vnoremap <tab> >gv
+vnoremap <shift><tab> <gv
+
+nnoremap <S-e> <C-e>
+nnoremap <S-y> <C-y>
+
+nnoremap
+" 窗口操作
+nnoremap <leader>q :q<CR>
+nnoremap <leader>w <C-w>w
+nnoremap <leader>h <C-w>h
+nnoremap <leader>j <C-w>j
+nnoremap <leader>k <C-w>k
+nnoremap <leader>l <C-w>l
+
+" split the screens to up (horizontal), down (horizontal), left (vertical), right (vertical)
+noremap su :set nosplitbelow<CR>:split<CR>:set splitbelow<CR>
+noremap se :set splitbelow<CR>:split<CR>
+noremap sn :set nosplitright<CR>:vsplit<CR>:set splitright<CR>
+noremap si :set splitright<CR>:vsplit<CR>
+
+" Copy to system clipboard
+vnoremap Y <Nop>
+vnoremap P <Nop>
+vnoremap Y "+y
+vnoremap P "+p
+nnoremap Y "+y
+nnoremap P "+p
+
+" Disable the default s key
+noremap s <nop>
+
+" Resize splits with arrow keys
+noremap <up> :res +2<CR>
+noremap <down> :res -2<CR>
+noremap <left> :vertical resize-2<CR>
+noremap <right> :vertical resize+2<CR>
+
+nmap ss <Plug>(easymotion-s2)
+set ideajoin

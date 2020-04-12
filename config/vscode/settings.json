@@ -1,0 +1,114 @@
+{
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.colorTheme": "Default Light+",
+    "terminal.integrated.inheritEnv": false,
+    "editor.fontFamily": "'Jetbrains mono'",
+    "vim.autoindent": false,
+    "python.autoComplete.addBrackets": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "python.jediEnabled": false,
+    "python.dataScience.askForKernelRestart": false,
+    "git.confirmSync": false,
+    "python.dataScience.jupyterServerURI": "http://47.97.157.150:8889/home/cell/?token=3c7886a3bac74e8497bfdd9bbb2ee946c82877bd4d98bbc3",
+    "cmake.configureOnOpen": false,
+
+    "vim.leader": "<space>",
+    "vim.hlsearch": true,
+    "vim.ignorecase": true,
+    "vim.smartcase": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": false,
+    // do override vscode default ctrl operations
+    "vim.useCtrlKeys": true,
+    //key handled by vscode
+    "vim.handleKeys": {
+    // "<C-a>": false,
+    "<C-f>": false
+    },
+    //easymotion
+    "vim.easymotion": true,
+    //sneak disable,cuz i want the default s function
+    "vim.sneak": false,
+    "vim.sneakUseIgnorecaseAndSmartcase": true,
+    //surround
+    "vim.surround": true,
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<Up>"],
+            "after": ["Nop"]
+        },
+        {
+            "before": ["<Down>"],
+            "after": ["Nop"]
+        },
+        {
+            "before": ["<Left>"],
+            "after": ["Nop"]
+        },
+        {
+            "before": ["<Right>"],
+            "after": ["Nop"]
+        },
+        {
+            "before": ["<Esc>"],
+            "after": ["Nop"]
+        },
+        {
+            "before": ["j", "j"],
+            "after": ["Esc"]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<Up>"],
+            "after": ["Nop"]
+        },
+        {
+            "before": ["<Down>"],
+            "after": ["Nop"]
+        },
+        {
+            "before": ["<Left>"],
+            "after": ["Nop"]
+        },
+        {
+            "before": ["<Right>"],
+            "after": ["Nop"]
+        },
+        {
+            "before": ["<Esc>"],
+            "after": ["Nop"]
+        },
+        {
+            "before": ["Y"],
+            "after": ["\"", "+", "y"]
+        },
+        {
+            "before": ["P"],
+            "after": ["\"", "+", "p"]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["Y"],
+            "after": ["Nop"]
+        },
+        {
+            "before": ["P"],
+            "after": ["Nop"]
+        },
+        {
+            "before": ["Y"],
+            "after": ["\"", "+", "y"]
+        },
+        {
+            "before": ["P"],
+            "after": ["\"", "+", "p"]
+        },
+        {
+        "before": ["<tab>"],
+        "after": [">", "g", "v"]
+        },
+    ],
+}
